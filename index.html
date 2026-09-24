@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>동전수첩 · 생필품 1회 비용표</title>
+<meta name="description" content="생필품, 한 번 쓰는 데 얼마인지 계산한 표. 영상에 나온 계산을 모아둡니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#F6F3EA; --grid:#E3E6E4; --ink:#1E1F22; --soft:#72767D; --red:#D6392A; --card:#FBFAF5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:Pretendard, -apple-system, sans-serif;
+    background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:24px 24px; }
+  .wrap { max-width:560px; margin:0 auto; padding:16px 16px 48px; }
+  .ad { background:var(--ink); color:#fff; font-size:13px; font-weight:700; line-height:1.45; padding:10px 14px; border-radius:10px; }
+  header { padding:22px 2px 6px; }
+  header h1 { font-size:30px; margin:0; letter-spacing:-0.5px; }
+  header p { margin:6px 0 0; color:var(--soft); font-size:15px; line-height:1.5; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 4px; }
+  nav a { font-size:14px; font-weight:700; color:var(--ink); text-decoration:none; background:var(--card); border:2px solid var(--ink); border-radius:999px; padding:6px 12px; }
+  section { background:var(--card); border:2px solid var(--ink); border-radius:14px; padding:18px 16px 14px; margin-top:22px; scroll-margin-top:12px; }
+  .hook { font-family:'Nanum Pen Script', cursive; font-size:24px; color:var(--red); margin:0; }
+  h2 { font-size:21px; margin:2px 0 12px; }
+  ol { list-style:none; margin:0; padding:0; }
+  .row { border-top:1.5px dashed #C9CCCB; padding:12px 0; }
+  .row:first-child { border-top:0; }
+  .head { display:flex; align-items:center; gap:10px; }
+  .rank { flex:none; width:26px; height:26px; border:2px solid var(--ink); border-radius:50%; font-weight:800; font-size:14px; display:grid; place-items:center; }
+  .best .rank { border-color:var(--red); color:var(--red); }
+  .name { flex:1; min-width:0; }
+  .name b { display:block; font-size:15px; line-height:1.35; }
+  .name small { color:var(--soft); font-size:13px; }
+  .per { text-align:right; flex:none; }
+  .per span { display:block; font-size:11px; color:var(--soft); }
+  .per b { font-family:'Nanum Pen Script', cursive; font-size:30px; font-weight:400; line-height:1; }
+  .best .per b { color:var(--red); }
+  .bar { height:8px; margin:8px 0 10px 36px; background:#ECEBE4; border-radius:4px; overflow:hidden; }
+  .bar i { display:block; height:100%; background:repeating-linear-gradient(-45deg, var(--ink) 0 2px, transparent 2px 6px); }
+  .best .bar i { background:repeating-linear-gradient(-45deg, var(--red) 0 2px, transparent 2px 6px); }
+  .go { display:inline-flex; align-items:center; gap:6px; margin-left:36px; font-size:14px; font-weight:700; color:var(--ink); text-decoration:none; border:2px solid var(--ink); border-radius:8px; padding:7px 12px; background:#fff; }
+  .go em { font-style:normal; font-size:11px; font-weight:700; color:var(--soft); border:1px solid var(--soft); border-radius:4px; padding:0 4px; }
+  .go.off { color:var(--soft); border-color:#C9CCCB; }
+  .basis { margin:12px 0 0; padding:10px 0 0 18px; border-top:2px solid var(--ink); color:var(--soft); font-size:12.5px; line-height:1.6; }
+  footer { margin-top:28px; color:var(--soft); font-size:12.5px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="ad">이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+  <header>
+    <h1>동전수첩</h1>
+    <p>생필품, 한 번 쓰는 데 얼마인지 적어둡니다.<br>쇼핑몰의 100ml당 가격 말고, 실제로 한 번 쓸 때 드는 값.</p>
+  </header>
+  <nav><a href="#tissue">휴지 30롤</a><a href="#dishwasher">식기세척기 세제</a><a href="#detergent">액체 세탁세제</a></nav>
+  
+  <section id="tissue">
+    <p class="hook">30롤 7천 원 휴지가 더 비싸다?</p>
+    <h2>휴지 30롤, 1㎡ 가격표</h2>
+    <ol>
+      <li class="row best">
+        <div class="head">
+          <span class="rank">1</span>
+          <div class="name"><b>코멧 순백 3겹 라벤더 바닐라</b><small>30m × 30롤, 폭 97mm · 11,990원</small></div>
+          <div class="per"><span>1㎡</span><b>137원</b></div>
+        </div>
+        <div class="bar"><i style="width:50.6%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJF8ozwy" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">2</span>
+          <div class="name"><b>쿠팡베이직 네추럴 3겹 천연펄프</b><small>30m × 30롤, 폭 95mm · 11,890원</small></div>
+          <div class="per"><span>1㎡</span><b>139원</b></div>
+        </div>
+        <div class="bar"><i style="width:51.3%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJKYcH6G" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">3</span>
+          <div class="name"><b>모나리자 부자되는집 내추럴 클래식 3겹</b><small>20m × 30롤, 폭 95mm · 8,420원</small></div>
+          <div class="per"><span>1㎡</span><b>148원</b></div>
+        </div>
+        <div class="bar"><i style="width:54.6%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJP3y3Cm" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">4</span>
+          <div class="name"><b>땡큐 3겹 천연펄프</b><small>14m × 30롤, 폭 90mm · 7,370원</small></div>
+          <div class="per"><span>1㎡</span><b>195원</b></div>
+        </div>
+        <div class="bar"><i style="width:72.0%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJULQbPo" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">5</span>
+          <div class="name"><b>깨끗한나라 순수 시그니처 3겹</b><small>27m × 30롤, 폭 96mm · 16,500원</small></div>
+          <div class="per"><span>1㎡</span><b>212원</b></div>
+        </div>
+        <div class="bar"><i style="width:78.2%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJZDzM5Y" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">6</span>
+          <div class="name"><b>크리넥스 데코 앤 소프트 3겹</b><small>27m × 30롤, 폭 98mm · 21,500원</small></div>
+          <div class="per"><span>1㎡</span><b>271원</b></div>
+        </div>
+        <div class="bar"><i style="width:100.0%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQJ4FyVAi" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+    </ol>
+    <ul class="basis">
+      <li>9월 24일 쿠팡 판매가 기준 (쿠폰·와우 할인 제외). 지금 가격은 다를 수 있어요.</li>
+      <li>면적 = 롤 길이 × 폭 × 롤 수</li>
+      <li>폭은 다나와 표기 기준 (땡큐는 88~95mm 중 90mm)</li>
+      <li>펄프 종류와 두께(평량)는 제품마다 다르며 비교하지 않았습니다</li>
+    </ul>
+  </section>
+
+  <section id="dishwasher">
+    <p class="hook">한 알 192원 세제가 더 비싸다?</p>
+    <h2>식기세척기 세제, 1회 가격표</h2>
+    <ol>
+      <li class="row best">
+        <div class="head">
+          <span class="rank">1</span>
+          <div class="name"><b>프로쉬 그린레몬 올인원 타블렛</b><small>50개 (1회 1알) · 16,350원</small></div>
+          <div class="per"><span>1회 (12인분)</span><b>327원</b></div>
+        </div>
+        <div class="bar"><i style="width:75.2%"></i></div>
+        <span class="go off">판매자 요청으로 링크가 제한된 상품이에요 · 쿠팡에서 직접 검색</span>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">2</span>
+          <div class="name"><b>탐사 올인원 식기세척기 세제 타블렛</b><small>52개 (1회 2알) · 9,990원</small></div>
+          <div class="per"><span>1회 (12인분)</span><b>384원</b></div>
+        </div>
+        <div class="bar"><i style="width:88.3%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQMOmMmdg" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">3</span>
+          <div class="name"><b>자연퐁 스팀워시 식기세척기용 세제</b><small>55입 × 2 (1회 2알) · 23,900원</small></div>
+          <div class="per"><span>1회 (12인분)</span><b>435원</b></div>
+        </div>
+        <div class="bar"><i style="width:100.0%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQKMl0Z5w" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+    </ol>
+    <ul class="basis">
+      <li>9월 24일 쿠팡 판매가 기준 (쿠폰·와우 할인 제외). 지금 가격은 다를 수 있어요.</li>
+      <li>12~14인분 1회 권장량 기준 (제조사 표기 · 한국소비자원 2026-01 비교)</li>
+      <li>탐사·자연퐁은 2알, 프로쉬는 1알</li>
+      <li>세척력은 비교하지 않았습니다</li>
+    </ul>
+  </section>
+
+  <section id="detergent">
+    <p class="hook">더 오래 가는 세제가 더 비싸다?</p>
+    <h2>액체 세탁세제, 빨래 1회 가격표</h2>
+    <ol>
+      <li class="row best">
+        <div class="head">
+          <span class="rank">1</span>
+          <div class="name"><b>에이스 고농축 액체세탁세제 일반드럼겸용</b><small>2.5L × 4 (1회 30ml) · 8,900원</small></div>
+          <div class="per"><span>빨래 1회</span><b>27원</b></div>
+        </div>
+        <div class="bar"><i style="width:14.9%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQKROuW0O" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">2</span>
+          <div class="name"><b>맘스럽 액상세제 플로럴향</b><small>2.5L × 4 (1회 45ml) · 8,490원</small></div>
+          <div class="per"><span>빨래 1회</span><b>38원</b></div>
+        </div>
+        <div class="bar"><i style="width:21.0%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQKWGXfNc" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">3</span>
+          <div class="name"><b>수퍼타이 액상세제</b><small>14L (1회 29ml) · 20,930원</small></div>
+          <div class="per"><span>빨래 1회</span><b>43원</b></div>
+        </div>
+        <div class="bar"><i style="width:23.8%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQK2g0FsO" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">4</span>
+          <div class="name"><b>터치 라이트 고농축 세탁세제</b><small>2.5L × 8 (1회 35ml) · 29,800원</small></div>
+          <div class="per"><span>빨래 1회</span><b>52원</b></div>
+        </div>
+        <div class="bar"><i style="width:28.7%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQK6Z2psO" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+      <li class="row">
+        <div class="head">
+          <span class="rank">5</span>
+          <div class="name"><b>퍼실 딥클린 라벤더젤 리필</b><small>2L × 4 (1회 45ml) · 32,220원</small></div>
+          <div class="per"><span>빨래 1회</span><b>181원</b></div>
+        </div>
+        <div class="bar"><i style="width:100.0%"></i></div>
+        <a class="go" href="https://link.coupang.com/a/hiQLdlJ2Si" target="_blank" rel="sponsored noopener">쿠팡에서 보기 <em>광고</em></a>
+      </li>
+    </ol>
+    <ul class="basis">
+      <li>9월 24일 쿠팡 판매가 기준 (쿠폰·와우 할인 제외). 지금 가격은 다를 수 있어요.</li>
+      <li>드럼 세탁기, 세탁물 5kg 기준 뒷면 권장량</li>
+      <li>묶음 가격 ÷ 개수로 한 통 가격 계산</li>
+      <li>맘스럽은 판매페이지(25ml)와 라벨(45ml) 표기가 달라 라벨값 사용</li>
+    </ul>
+  </section>
+  <footer>
+    <p>1회 사용량은 제품 뒷면 권장량이나 한국소비자원 자료를 따릅니다. 품질·성능은 비교하지 않았습니다.</p>
+    <p>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+  </footer>
+</div>
+</body>
+</html>

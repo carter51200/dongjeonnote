@@ -24,6 +24,7 @@
   section { background:var(--card); border:2px solid var(--ink); border-radius:14px; padding:18px 16px 14px; margin-top:22px; scroll-margin-top:12px; }
   .hook { font-family:'Nanum Pen Script', cursive; font-size:24px; color:var(--red); margin:0; }
   h2 { font-size:21px; margin:2px 0 12px; }
+  h2 .no { display:inline-block; background:#1E1F22; color:#fff; border-radius:8px; padding:0 8px; font-size:17px; vertical-align:2px; }
   ol { list-style:none; margin:0; padding:0; }
   .row { border-top:1.5px dashed #C9CCCB; padding:12px 0; }
   .row:first-child { border-top:0; }
@@ -54,11 +55,11 @@
     <h1>동전수첩</h1>
     <p>생필품, 한 번 쓰는 데 얼마인지 적어둡니다.<br>쇼핑몰의 100ml당 가격 말고, 실제로 한 번 쓸 때 드는 값.</p>
   </header>
-  <nav><a href="#tissue">휴지 30롤</a><a href="#dishwasher">식기세척기 세제</a><a href="#detergent">액체 세탁세제</a><a href="#capsule">캡슐세제</a></nav>
+  <nav><a href="#tissue">1. 휴지 30롤</a><a href="#dishwasher">2. 식기세척기 세제</a><a href="#detergent">3. 액체 세탁세제</a><a href="#capsule">4. 캡슐세제</a></nav>
   
   <section id="tissue">
     <p class="hook">30롤 7천 원 휴지가 더 비싸다?</p>
-    <h2>휴지 30롤, 1㎡ 가격표</h2>
+    <h2><span class="no">1번</span> 휴지 30롤, 1㎡ 가격표</h2>
     <ol>
       <li class="row best">
         <div class="head">
@@ -125,7 +126,7 @@
 
   <section id="dishwasher">
     <p class="hook">한 알 192원 세제가 더 비싸다?</p>
-    <h2>식기세척기 세제, 1회 가격표</h2>
+    <h2><span class="no">2번</span> 식기세척기 세제, 1회 가격표</h2>
     <ol>
       <li class="row best">
         <div class="head">
@@ -165,7 +166,7 @@
 
   <section id="detergent">
     <p class="hook">더 오래 가는 세제가 더 비싸다?</p>
-    <h2>액체 세탁세제, 빨래 1회 가격표</h2>
+    <h2><span class="no">3번</span> 액체 세탁세제, 빨래 1회 가격표</h2>
     <ol>
       <li class="row best">
         <div class="head">
@@ -223,7 +224,7 @@
 
   <section id="capsule">
     <p class="hook">한 알 318원 캡슐이 더 비싸다?</p>
-    <h2>캡슐세제, 빨래 1회 가격표 (세탁물 5kg)</h2>
+    <h2><span class="no">4번</span> 캡슐세제, 빨래 1회 가격표 (세탁물 5kg)</h2>
     <ol>
       <li class="row best">
         <div class="head">
